@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Item_Container {
+  height: 510px;
+  overflow: auto;
+}
+
+.fc {
+  width: 100%;
+}
+
+.Comman_Loader {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  z-index: 99999999;
+}
+
+.Item_Container .fc .fc-button {
+  border-radius: 50%;
+  padding: 0.3em;
+}
+.Item_Container .fc .fc-toolbar-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.Item_Container .fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0.5em;
+}
+
+.Item_Container::-webkit-scrollbar {
+  width: 8px;
+  background-color: none;
+}
+
+.Item_Container::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 10px;
+}
+
+.NavLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #455a64;
+  text-decoration: none;
+}
+
+.isActive {
+  width: 100%;
+  color: #2962ff;
+  border-radius: 10px;
+}
+
+.mesh-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mesh-loader .circle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #03a9f4;
+  border-radius: 50%;
+  margin: -12.5px;
+  -webkit-animation: mesh 3s ease-in-out infinite;
+  animation: mesh 3s ease-in-out infinite -1.5s;
+}
+
+.mesh-loader > div .circle:last-child {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.mesh-loader > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.mesh-loader > div:last-child {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+@-webkit-keyframes mesh {
+  0% {
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  50.00001% {
+    -webkit-transform-origin: 50% 200%;
+    transform-origin: 50% 200%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 200%;
+    transform-origin: 50% 200%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes mesh {
+  0% {
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  50.00001% {
+    -webkit-transform-origin: 50% 200%;
+    transform-origin: 50% 200%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 200%;
+    transform-origin: 50% 200%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

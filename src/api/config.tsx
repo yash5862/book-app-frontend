@@ -1,5 +1,5 @@
 // let serviceUrl = process.env.REACT_APP_SERVICE_URL;
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "http://ec2-54-235-237-0.compute-1.amazonaws.com/api/";
 
 export const API_URL = {
   auth: {

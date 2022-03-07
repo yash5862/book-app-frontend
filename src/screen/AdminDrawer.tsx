@@ -48,7 +48,7 @@ const AdminDrawer = () => {
       <Logo sx={{ display: "flex", p: 4 }} />
       <List component="nav" sx={{ px: 2 }}>
         {menuItem.map((item, index) => (
-          <ListItem button key={index}>
+          <ListItem button={true} key={index}>
             <NavLink
               className={(props) => {
                 return `${props.isActive ? "isActive " : ""}NavLink`;
@@ -90,7 +90,7 @@ const AdminDrawer = () => {
           </Button>
         </ButtonGroup> */}
 
-        <ListItem button>
+        <ListItem button={true}>
           <ListItemAvatar>
             <Avatar>
               <ExitToAppIcon />
@@ -132,7 +132,7 @@ const AdminDrawer = () => {
           display: { xs: "block", lg: "none" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
-            width: width,
+            width,
           },
         }}
       >
@@ -140,12 +140,12 @@ const AdminDrawer = () => {
       </Drawer>
       <Drawer
         variant="permanent"
-        open
+        open={true}
         sx={{
           display: { xs: "none", lg: "block" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
-            width: width,
+            width,
           },
         }}
       >

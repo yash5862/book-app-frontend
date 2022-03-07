@@ -64,16 +64,16 @@ const UserDialog = ({
 
   return (
     <Dialog open={open} onClose={onClose} aria-labelledby="user-dialog-title">
-      <form onSubmit={formik.handleSubmit} noValidate>
+      <form onSubmit={formik.handleSubmit} noValidate={true}>
         <DialogTitle id="user-dialog-title">
           {editMode ? "Update Book Data" : "Add New Book"}
         </DialogTitle>
         <DialogContent>
           <TextField
             margin="normal"
-            required
-            autoFocus
-            fullWidth
+            required={true}
+            autoFocus={true}
+            fullWidth={true}
             id="name"
             label="Name"
             name="name"
@@ -84,9 +84,9 @@ const UserDialog = ({
           />
           <TextField
             margin="normal"
-            required
-            autoFocus
-            fullWidth
+            required={true}
+            autoFocus={true}
+            fullWidth={true}
             id="author"
             label="Author Name"
             name="author"
@@ -97,9 +97,9 @@ const UserDialog = ({
           />
           <TextField
             margin="normal"
-            required
-            autoFocus
-            fullWidth
+            required={true}
+            autoFocus={true}
+            fullWidth={true}
             id="price"
             label="Price"
             name="price"
@@ -110,9 +110,9 @@ const UserDialog = ({
           />
           <TextField
             margin="normal"
-            required
-            autoFocus
-            fullWidth
+            required={true}
+            autoFocus={true}
+            fullWidth={true}
             id="ISBN"
             label="ISBN"
             name="ISBN"

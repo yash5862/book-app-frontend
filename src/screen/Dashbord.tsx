@@ -79,7 +79,7 @@ const Dashbord = () => {
     await dispatch(deleteBook(deletingItemId));
     setDeletingItemId(undefined);
     bookdataHanlder();
-  }
+  };
 
   useEffect(() => {
     bookdataHanlder();
@@ -311,13 +311,12 @@ const Dashbord = () => {
         </>
       )}
 
-      <ConfirmDialog 
-        open={deletingItemId != undefined} 
-        description={'Are you sure you want to delete this book?'} 
-        onConfirm={deleteItem} 
-        onClose={() => setDeletingItemId(undefined)} 
+      <ConfirmDialog
+        open={deletingItemId !== undefined}
+        description={"Are you sure you want to delete this book?"}
+        onConfirm={deleteItem}
+        onClose={() => setDeletingItemId(undefined)}
       />
-
     </React.Fragment>
   );
 };

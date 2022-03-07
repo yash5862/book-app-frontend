@@ -32,8 +32,8 @@ export function apiClient({
     })
       .then((res: any) => {
         resolve(res.data);
-      
-        toast.success(res?.data?.message)
+
+        toast.success(res?.data?.message);
       })
       .catch((err: any) => {
         if (err.response && err.response.data.message) {

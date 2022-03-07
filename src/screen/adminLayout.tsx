@@ -6,8 +6,11 @@ const AdminLayout = ({ Children: ReactComponent }: any) => {
   return (
     <Box sx={{ display: "flex" }}>
       <AdminDrawer />
-      <Box component="main" sx={{ flexGrow: 1, pb: 3, px: { xs: 3, sm: 6 }, overflow:"auto" }}>
-      <Toolbar />
+      <Box
+        component="main"
+        sx={{ flexGrow: 1, pb: 3, px: { xs: 3, sm: 6 }, overflow: "auto" }}
+      >
+        <Toolbar />
         <ReactComponent />
       </Box>
     </Box>

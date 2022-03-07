@@ -86,6 +86,19 @@ const Register = () => {
             margin="normal"
             required
             fullWidth
+            id="firstName"
+            label={"First Name"}
+            name="firstName"
+            value={formik.values.firstName}
+            onChange={formik.handleChange}
+            error={formik.touched.firstName && Boolean(formik.errors.firstName)}
+            helperText={formik.touched.firstName && formik.errors.firstName}
+          />
+
+          <TextField
+            margin="normal"
+            required
+            fullWidth
             id="lastName"
             label={"Last Name"}
             name="lastName"
@@ -94,18 +107,6 @@ const Register = () => {
             onChange={formik.handleChange}
             error={formik.touched.lastName && Boolean(formik.errors.lastName)}
             helperText={formik.touched.lastName && formik.errors.lastName}
-          />
-          <TextField
-            margin="normal"
-            required
-            fullWidth
-            id="firstName"
-            label={"First Name"}
-            name="firstName"
-            value={formik.values.firstName}
-            onChange={formik.handleChange}
-            error={formik.touched.firstName && Boolean(formik.errors.firstName)}
-            helperText={formik.touched.firstName && formik.errors.firstName}
           />
 
           <TextField
